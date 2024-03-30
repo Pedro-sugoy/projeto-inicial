@@ -1,110 +1,126 @@
 
 <!DOCTYPE html>
-  
-  
+<!-- Esse é o DTD do HTML 5. -->
+
 <html lang="pt-br">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <link rel="stylesheet" href="./css-styles/cabecalho.css">
-    <link rel="stylesheet" href="./css-styles/titulo.css">
-    <link rel="stylesheet" href="./css-styles/subtitulo.css">
-    <link rel="stylesheet" href="./css-styles/navegacao.css">
-    <link rel="stylesheet" href="./css-styles/container.css">
-    <link rel="stylesheet" href="./css-styles/linhas.css">
-    <link rel="stylesheet" href="./css-styles/bordas.css">
-    <link rel="stylesheet" href="./css-styles/paragrafo.css">
-    <link rel="stylesheet" href="./css-styles/butao.css">
-    <link rel="stylesheet" href="./css-styles/rodape.css">
-    <link rel="stylesheet" href="./css-styles/titulo-pagina.css">
-      <title>Página Básica</title>
-    </head>
-    <body>
-      <div class="container">
-        
-        <header class="cabecalho">
-          <h1
-            style="text-align: center; font-family: Tahoma, Verdana, sans-serif"
-          >
-            Minha Página
-          </h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="https://www.fiap.com.br" target="_blank"> FIAP </a>
-              </li>
-              <li><a href="https://www.google.com" target="_blank">Google</a></li>
-              <li><a href="https://github.com" target="_blank">Github</a></li>
-              
-            </ul>
-          </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Página Básica</title>
 
-  
-        <hr />
+    <link rel="stylesheet" href="./CSS-style/bordas.css">
+    <link rel="stylesheet" href="./CSS-style/botao.css">
+    <link rel="stylesheet" href="./CSS-style/cabecalho.css">
+    <link rel="stylesheet" href="./CSS-style/container.css">
+    <link rel="stylesheet" href="./CSS-style/linhas.css">
+    <link rel="stylesheet" href="./CSS-style/navegacao.css">
+    <link rel="stylesheet" href="./CSS-style/paragrafo.css">
+    <link rel="stylesheet" href="./CSS-style/rodape.css">
+    <link rel="stylesheet" href="./CSS-style/subtitulo.css">
+    <link rel="stylesheet" href="./CSS-style/titulo-pagina.css">
+    <link rel="stylesheet" href="./CSS-style/titulo.css">
 
-        <section class="conteudo">
-          <div id="help">
-            <h2>HELP</h2>
-            <p>
-              Help - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Velit ratione numquam quaerat eligendi corrupti nobis ipsam eos
-              aliquam, qui nulla nemo aut. Voluptas quidem vitae esse nam error
-              est, cum delectus exercitationem! Soluta consectetur voluptatibus
-              nam, similique vero alias culpa quibusdam voluptatem consequuntur,
-              maiores esse, animi delectus velit natus magni fugiat tempora odio
-              nostrum sapiente eos quisquam omnis commodi cupiditate! Enim laborum
-              non et voluptates, corrupti repellendus doloremque est omnis
-              consequatur a nobis nam harum ipsa id aliquid dolorem cum ab
-              consequuntur mollitia molestias autem in natus! Minima quae
-              molestiae reprehenderit ratione officia perspiciatis quasi sapiente
-              veritatis facere! Ipsum, placeat!
-            </p>
-            <a href="#">Mais...</a>
-          </div>
-          <div id="about">
-            <h2>ABOUT</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              vel odio hic ullam accusamus maxime beatae quidem ratione placeat
-              unde?
-            </p>
-            <a href="#">Mais...</a>
-          </div>
-          <div id="contact">
-            <h2>CONTACT</h2>
-            <form>
-              <fieldset>
-                <legend>Customer Data</legend>
-                <div>
-                  <label for="idNm">Nome:</label>
-                  <input
-                    type="text"
-                    name="txtNm"
-                    id="idNm"
-                    placeholder="Digite seu nome"
-                  />
-                </div>
-                <div>
-                  <label for="idNm">Email:</label>
-                  <input
-                    type="email"
-                    name="txtEmail"
-                    id="idEmail"
-                    placeholder="Digite seu email"
-                  />
-                </div>
-                <div>
-                  <button type="button">Send</button>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-  
+  </head>
+  <body>
+    <div id="container">
+      <header class="cabecalho">
+        <h1 class="titulo-pagina"> Minha Página</h1>
+        <nav>
+          <ul>
+            <li><a href="./Paginas/help.html"><img src="./img/help.png" alt="Interrogação" width="5%" title="AJUDA"></a><b> AJUDA</b></li>
+            <li><a href="./Paginas/about.html"><img src="./img/about.png" alt="Exclamação" width="5%" title="SOBRE"></a><b> SOBRE</b></li>
+            <li><a href="#contact"><img src="./img/contact.png" alt="TELEFONE" width="5%" title="CONTATO"></a><b> CONTATO</b></li>
+          </ul>
+        </nav>
+      </header>
 
-      </div>
 
-    </body>
+      <hr />
+
+      <!--ESTA ÁREA VAI SER A DE CONTEÚDO-->
+      <section class="conteudo">
+        <div id="help">
+          <h2 class="subtitulo">Help</h2>
+          <p>
+            Help - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Velit ratione numquam quaerat eligendi corrupti nobis ipsam eos
+            aliquam, qui nulla nemo aut. Voluptas quidem vitae esse nam error
+            est, cum delectus exercitationem! Soluta consectetur voluptatibus
+            nam, similique vero alias culpa quibusdam voluptatem consequuntur,
+            maiores esse, animi delectus velit natus magni fugiat tempora odio
+            nostrum sapiente eos quisquam omnis commodi cupiditate! Enim laborum
+            non et voluptates, corrupti repellendus doloremque est omnis
+            consequatur a nobis nam harum ipsa id aliquid dolorem cum ab
+            consequuntur mollitia molestias autem in natus! Minima quae
+            molestiae reprehenderit ratione officia perspiciatis quasi sapiente
+            veritatis facere! Ipsum, placeat!
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+
+        <div id="about">
+          <h2 class="subtitulo">Sobre</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            vel odio hic ullam accusamus maxime beatae quidem ratione placeat
+            unde?
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+
+        <div id="contact">
+          <h2 class="subtitulo">Contato</h2>
+          <form>
+            <fieldset>
+              <legend>Customer Data</legend>
+              <div>
+                <label for="idNm">Nome:</label>
+                <input
+                  type="text"
+                  name="txtNm"
+                  id="idNm"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div>
+                <label for="idNm">Email:</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div>
+                <button type="button">Send</button>
+              </div>
+            </fieldset>
+            <span><a href="#container">voltar</a></span>
+          </form>
+        </div>
+      </section>
+
+
+      <footer class="rodape">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.fiap.com.br" target="_blank">Fiap</a>
+            </li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://github.com" target="_blank">Github</a></li>
+          </ul>
+        </nav>
+        <p>Todos os direitos desse site estão reservados para &copy; - Minha Página 2024Non credes. "-Sed tu hic convenit. Te tenerem et dicerem "Hic puer optimus in mundo puer futurus est. Hic puer melior futurus est quam quisque scimus." Et tu bene crevisti, mirabilis.
+          Tunc tempus est ut adultus sis et mundum vincas. et vicit. Sed alicubi in via mutasti. Destitisti te.
+          Nunc ponant homines digitos suos in faciem tuam, et indicent tibi quoniam non es bonus. Dicam quod iam nostis: magnus iris non est mundus. Locus sordida est, locus crudelis est. Quis non curat quam lentus es. genibus te praebebit, et in genibus tuis semper, si dimiseris, manebis.
+          Tu, me, nemo tam duram vitam feriet. Sed difficile non est de feriendo. Suus 'quantum potes verberari et movere. Quantum potes capere et conari. Id quomodo vincere possis.
+          Nunc si dignam nosti, sequere quod merui. Sed aliquam ut velit a pellentesque. Et non digitos monstrat, dicens quod non potes id facere propter se, illam, vel aliquem alium. Tantum faciunt timidi et non ignavi. melior es quam hoc!" 
+          -ロックバルボア
+      </p>
+      </footer>
+    </div>
+
+  </body>
 
 </html>
